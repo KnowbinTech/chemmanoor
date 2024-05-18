@@ -4,7 +4,7 @@
 </script>
 
 <div class="container mx-auto flex flex-col md:flex-row items-center py-12 md:py-24 ">
-  <div class="flex-1 dark:bg-white dark:bg-opacity-75 dark:rounded-lg dark:shadow-lg" >
+  <div class="flex-1 dark:bg-gray-300 dark:rounded-lg dark:shadow-lg" >
     <img src={aboutImage} alt="About Us" class="w-full h-auto fill-black dark:fill-white">
   </div>
   <div class="flex-1 flex flex-col justify-center items-start p-4">
