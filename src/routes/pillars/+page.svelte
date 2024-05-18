@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import  Avatar  from "$lib/images/avatar.jpg"
-    //import Francis from "$lib/images/leaders/francis-chemmanoor.jpeg"
+    import CpJose from "$lib/images/leaders/Adv-C-P-Jose.jpg"
     
     export let data: PageData;
 
@@ -34,7 +34,7 @@
     },
     {
         name: 'Adv. C. P. Jose',
-        image: '/images/adv-cp-jose.jpg',
+        image: "images/leaders/Adv-C-P-Jose.jpg",
         roles: ['President 1999-2004', 'Patron 2005']
     },
     {
@@ -79,7 +79,7 @@
     },
     {
         name: 'C. R. Jose Master',
-        image: '/images/cr-jose-master.jpg',
+        image: '/images/leaders/C-R-Jose_master.jpg',
         roles: ['Vice-President 2006-2008', 'Vice-President 2009-2011', 'Vice-President 2012-2014', 'President 2014-2016']
     },
     {
@@ -182,7 +182,7 @@ function isCurrentLeader(role: string): boolean {
             {#each currentLeaders as leader}
                 <div class="card bg-white shadow-lg rounded-lg w-full overflow-hidden">
                     <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
-                        <img src={Avatar} alt={leader.name} class="w-full h-full object-cover">
+                        <img src={leader.image || Avatar} alt={leader.name} class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 text-center">
                         <h3 class="text-lg font-bold">{leader.name}</h3>
@@ -203,7 +203,7 @@ function isCurrentLeader(role: string): boolean {
             {#each previousLeaders as leader}
                 <div class="card bg-white shadow-lg rounded-lg w-full overflow-hidden">
                     <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
-                        <img src={Avatar} alt={leader.name} class="w-full h-full object-cover">
+                        <img src={leader.image || Avatar} alt={leader.name} class="w-full h-full object-cover">
                     </div>
                     <div class="p-4 text-center">
                         <h3 class="text-lg font-bold">{leader.name}</h3>
