@@ -48,7 +48,7 @@
               <Drawer.Title
                 >
                 <div class="text-2xl pl-12 mt-12 md:ml-10 font-bold">
-                  Chemmanur
+                  Chemmanoor
                 </div></Drawer.Title
               >
             </Drawer.Header>
@@ -100,7 +100,7 @@
       </div>
   
       <!-- <img src="/snap-serve-logo.png" alt="Snap Serve Logo" class="h-8"> -->
-      <div><a href="/" class=" text-3xl font-bold">Chemmanur</a></div>
+      <div><a href="/" class=" text-3xl font-bold">Chemmanoor</a></div>
   
       <!-- <Button variant="outline" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"><Menu /></Button> -->
       <div class="hidden md:flex md:items-center">

@@ -42,6 +42,7 @@
 	"type": "module",
 	"dependencies": {
 		"@internationalized/date": "^3.5.3",
+		"@sveltejs/adapter-node": "^5.0.1",
 		"bits-ui": "^0.21.7",
 		"clsx": "^2.1.1",
 		"cmdk-sv": "^0.0.17",

@@ -29,7 +29,7 @@
     },
     {
         name: 'Major Cherunny Chemmanoor',
-        image: '/images/leaders/Major-Cherunny-Chemmanoor.jpg',
+        image: '/images/leaders/cherunni.jpg',
         roles: ['Genl. Secretary 1999-2004', 'Patron 2005']
     },
     {
@@ -39,42 +39,42 @@
     },
     {
         name: 'Dr. C. D. Mathews (Late)',
-        image: '/images/leaders/Dr-C-D-Mathews.jpg',
+        image: '/images/leaders/c-d-mathew.jpg',
         roles: ['Secretary 1999-2002', 'Vice-President 2003-2004', 'President 2005', 'Patron 2006-2008']
     },
     {
         name: 'Devassy Chemmanoor',
-        image: '/images/leaders/Devassy-Chemmanoor.jpg',
+        image: '/images/leaders/devassy.jpg',
         roles: ['Vice-President 1999-2006', 'President 2006-2008', 'Patron 2009']
     },
     {
         name: 'C. L. Joseph Master (Late)',
-        image: '/images/leaders/C-L-Joseph-Master.jpg',
+        image: '/images/leaders/joseph-master.jpg',
         roles: ['Secretary 1999-2004', 'Genl. Secretary 2005-2006', 'Vice-President 2007']
     },
     {
         name: 'C. A. Jose',
-        image: '/images/leaders/C-A-Jose.jpg',
+        image: '/images/leaders/c-a-jose.jpg',
         roles: ['Treasurer 1999-2004', 'Vice-President 2005-2008', 'President 2009-2011']
     },
     {
         name: 'C. U. Jain',
-        image: '/images/leaders/C-U-Jain.jpg',
+        image: '/images/leaders/Jain-c-u.jpg',
         roles: ['Treasurer 2005-2008', 'Genl. Secretary 2012-2014', 'Genl. Secretary 2018-2022']
     },
     {
         name: 'C. R. Lazarkutty',
-        image: '/images/leaders/C-R-Lazarkutty.jpg',
+        image: '/images/leaders/c-r-lazerkutty.jpg',
         roles: ['Secretary 2002-2006', 'Genl. Secretary 2007-2008', 'Vice-President 2009-2011', 'Vice-President 2012-2014', 'Vice-President 2014-2016', 'Vice-President 2016-2018', 'President 2018-2022']
     },
     {
         name: 'C. V. Antony (Late)',
-        image: '/images/leaders/C-V-Antony.jpg',
+        image: '/images/leaders/c-v-antony-2.jpg',
         roles: ['Secretary 1999-2000']
     },
     {
         name: 'C. D. Antony (Late)',
-        image: '/images/leaders/C-D-Antony.jpg',
+        image: '/images/leaders/c-d-antony.jpg',
         roles: ['Genl. Secretary 2009-2011', 'President 2012-2014']
     },
     {
@@ -84,7 +84,7 @@
     },
     {
         name: 'Francis Chemmanoor',
-        image: '/images/leaders/Francis-Chemmanoor.jpg',
+        image: '/images/leaders/francis-chemmanoor.jpg',
         roles: ['Secretary 2006-2008', 'Secretary 2009-2011', 'Secretary 2012-2014', 'Secretary 2014-2016', 'President 2016-2018']
     },
     {
@@ -99,52 +99,52 @@
     },
     {
         name: 'C. T. Sebastian',
-        image: '/images/leaders/C-T-Sebastian.jpg',
+        image: '/images/leaders/c-t-sebastian.jpg',
         roles: ['Secretary 2009-2011', 'Secretary 2012-2014', 'Treasurer 2014-2016']
     },
     {
         name: 'Sony Jose',
-        image: '/images/leaders/Sony-Jose.jpg',
+        image: '/images/leaders/sony-jose.jpg',
         roles: ['Treasurer 2012-2014', 'Genl. Secretary 2016-2018', 'Vice-President 2018-2022', 'President 2022-2024']
     },
     {
         name: 'Vijo Varghese',
-        image: '/images/leaders/Vijo-Varghese.jpg',
+        image: '/images/leaders/vijo-varghese.jpg',
         roles: ['Vice-President 2014-2016', 'Treasurer 2016-2018', 'Vice-President 2018-2022', 'Secretary 2022-2024']
     },
     {
         name: 'James C. K',
-        image: '/images/leaders/James-C-K.jpg',
+        image: '/images/leaders/james-c-k.jpg',
         roles: ['Secretary 2014-2016', 'Secretary 2016-2018', 'Secretary 2018-2022']
     },
     {
         name: 'C. T. Jose (Late)',
-        image: 'images/Leaders/C-T-Jose.jpg',
+        image: '/images/leaders/C-T-Jose.jpg',
         roles: ['Secretary 2014-2016']
     },
     {
         name: 'Nixon C. F',
-        image: 'images/Leaders/Nixon-C-F.jpg',
+        image: '/images/leaders/Nixon-c-f.jpg',
         roles: ['Vice-President 2016-2018', 'Treasurer 2018-2022', 'Treasurer 2022-2024']
     },
     {
         name: 'C. T. Babu',
-        image: 'images/Leaders/C-T-Babu.jpg',
+        image: '/images/leaders/C-T-Babu.jpg',
         roles: ['Secretary 2016-2018']
     },
     {
         name: 'C. V. Antony',
-        image: 'images/Leaders/C-V-Antony-2022.jpg',
+        image: '/images/leaders/C-V-Antony.jpg',
         roles: ['Vice-President 2022-2024']
     },
     {
         name: 'C. J. Jose',
-        image: 'images/Leaders/C-J-Jose.jpg',
+        image: '/images/leaders/C-J-Jose.jpg',
         roles: ['Vice-President 2022-2024']
     },
     {
         name: 'John Jose Chemmanoor',
-        image: 'images/Leaders/John-Jose-Chemmanoor.jpg',
+        image: '/images/leaders/John-2.jpg',
         roles: ['Secretary 2022-2024']
     }
 ];
