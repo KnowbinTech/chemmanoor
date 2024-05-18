@@ -19,12 +19,12 @@
     },
     {
         name: 'Fr. Antony Chemmanoor (Late)',
-        image: '/images/leaders/Fr-Antony-Chemmanoor.jpg',
+        image: '/images/leaders/fr-antony-chemmanoor.jpg',
         roles: ['Patron 1999-2000']
     },
     {
         name: 'Fr. John Paul Chemmanoor',
-        image: '/images/leaders/Fr-John-Paul-Chemmanoor.jpg',
+        image: '/images/leaders/john-paul.jpg',
         roles: ['Chief Patron 2020']
     },
     {
