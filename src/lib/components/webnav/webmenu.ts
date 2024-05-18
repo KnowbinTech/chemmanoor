@@ -31,6 +31,11 @@ export const webmenu: Webmenu[] = [
 		
 	},
 	{
+		name: "Fellowship",
+		href: "/fellowship",
+		
+	},
+	{
 		name: "Contact Us",
 		href: "/contact",
 		

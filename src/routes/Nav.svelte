@@ -36,7 +36,7 @@
   
   <nav class=" backdrop-blur-md text-foreground">
     <div class="mx-auto px-4 py-6 flex items-center justify-between">
-      <div class="lg:hidden">
+      <div class="md:hidden">
         <Drawer.Root>
           <Drawer.Trigger>
             <Button variant="outline">
@@ -103,7 +103,7 @@
       <div><a href="/" class=" text-3xl font-bold">Chemmanur</a></div>
   
       <!-- <Button variant="outline" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"><Menu /></Button> -->
-      <div class="hidden lg:flex lg:items-center">
+      <div class="hidden md:flex md:items-center">
         {#if $isLoggedIn}
           <!-- User is logged in, show user navigation -->
           <!-- <DashboardMainNav /> -->

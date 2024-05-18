@@ -177,8 +177,8 @@ function isCurrentLeader(role: string): boolean {
 
 <div class="container mx-auto px-4">
     {#if currentLeaders.length > 0}
-        <h2 class="text-2xl font-bold text-center my-6">Current Leaders</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <h2 class="text-2xl font-bold my-6">Current Leaders</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mb-10">
             {#each currentLeaders as leader}
                 <div class="card bg-white shadow-lg rounded-lg w-full overflow-hidden">
                     <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
@@ -198,8 +198,8 @@ function isCurrentLeader(role: string): boolean {
     {/if}
 
     {#if previousLeaders.length > 0}
-        <h2 class="text-2xl font-bold text-center my-6">Previous Leaders</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <h2 class="text-2xl font-bold my-6">Previous Leaders</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
             {#each previousLeaders as leader}
                 <div class="card bg-white shadow-lg rounded-lg w-full overflow-hidden">
                     <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
