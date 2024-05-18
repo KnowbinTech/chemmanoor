@@ -73,34 +73,26 @@
                <ul class="space-y-3">
                   <li>
                      <a
-                        href="/"
+                        href="/pillars"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     SaaS Development
+                     Pillars
                      </a>
                   </li>
                   <li>
                      <a
-                        href="/"
+                        href="/geneology"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     Our Products
+                        Geneology
                      </a>
                   </li>
                   <li>
                      <a
-                        href="/"
+                        href="/fellowship"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     User Flow
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="/"
-                        class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     User Strategy
+                        Fellowship
                      </a>
                   </li>
                </ul>
@@ -155,34 +147,26 @@
                <ul class="space-y-3">
                   <li>
                      <a
-                        href="/"
+                        href="/about"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     Premium Support
+                    About
                      </a>
                   </li>
                   <li>
                      <a
-                        href="/"
+                        href="/history"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     Our Services
+                     History
                      </a>
                   </li>
                   <li>
                      <a
-                        href="/"
+                        href="/contact"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     Know Our Team
-                     </a>
-                  </li>
-                  <li>
-                     <a
-                        href="/"
-                        class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-                        >
-                     Download App
+                     Contact US
                      </a>
                   </li>
                </ul>

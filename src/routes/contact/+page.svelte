@@ -2,11 +2,12 @@
     import type { PageData } from './$types';
     
     export let data: PageData;
+    import aboutImage from "$lib/images/logo.png";
 </script>
 <section class="min-h-screen bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
-        <div class="lg:flex lg:items-center lg:-mx-10">
-            <div class="lg:w-1/2 lg:mx-10">
+        <div class="md:flex md:items-center md:-mx-10">
+            <div class="md:w-1/2 md:mx-10">
                 <h1 class="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">Let’s talk</h1>
 
                 <p class="mt-4 text-gray-500 dark:text-gray-400">
@@ -15,7 +16,7 @@
                 </p>
 
                 <form class="mt-12">
-                    <div class="-mx-2 md:items-center md:flex">
+                    <div class=" md:items-center md:flex">
                         <div class="flex-1 px-2">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
                             <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
@@ -38,8 +39,8 @@
                 </form>
             </div>
 
-            <div class="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
-                <img class="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+            <div class="mt-12 flex mt-0 flex-col items-center w-1/2 mx-10">
+                <img class=" object-cover mx-auto rounded-full block shrink-0 w-56 h-56" src={aboutImage} alt="">
 
                 <div class="mt-6 space-y-8 md:mt-8">
                     <p class="flex items-start -mx-2">
