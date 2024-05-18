@@ -8,7 +8,7 @@
    >
    <div class="container mx-auto">
       <div class="flex flex-wrap -mx-4">
-         <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
+         <div class="w-full px-4 sm:w-2/3 md:w-3/12">
             <div class="w-full mb-10">
                <a
                   href="/"
@@ -65,7 +65,7 @@
                </p>
             </div>
          </div>
-         <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+         <div class="w-full px-4 sm:w-1/2 md:w-2/12">
             <div class="w-full mb-10">
                <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
                   Resources
@@ -106,7 +106,7 @@
                </ul>
             </div>
          </div>
-         <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+         <div class="w-full px-4 sm:w-1/2 md:w-2/12">
             <div class="w-full mb-10">
                <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
                   Company
@@ -147,7 +147,7 @@
                </ul>
             </div>
          </div>
-         <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+         <div class="w-full px-4 sm:w-1/2 md:w-2/12">
             <div class="w-full mb-10">
                <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
                   Quick Links
@@ -188,7 +188,7 @@
                </ul>
             </div>
          </div>
-         <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+         <div class="w-full px-4 sm:w-1/2 md:w-3/12">
             <div class="w-full mb-10">
                <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
                   Follow Us On
