@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Button } from "$lib/components/ui/button";  
-    import aboutImage from "$lib/images/logo.png";
+    import aboutImage from "$lib/images/Logoblack.png";
 </script>
 <!-- ====== Footer Section Start -->
 <footer
@@ -14,16 +14,12 @@
                   href="/"
                   class="mb-6 inline-block max-w-[160px]"
                   >
-               <img
-                  src={aboutImage}
+               <!-- <img
+                  src={logo}
                   alt="logo"
                   class="max-w-full dark:hidden"
-                  />
-               <img
-                  src={aboutImage}
-                  alt="logo"
-                  class="max-w-full hidden dark:block"
-                  />
+                  /> -->
+                  <img src={aboutImage} alt="logo" class="w-full h-auto  dark:invert">
                </a>
                <p class="text-base text-body-color dark:text-dark-6 mb-7">
                   Home where all Chemmanur family members find a sense of belonging and connection

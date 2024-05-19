@@ -1,10 +1,9 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { Button } from '$lib/components/ui/button';
-	import aniversery from '$lib/images/aniversery.png';
-	let image = aniversery;
-
-	export let data: PageData;
+	// import aniversery from '$lib/images/aniversery.png';
+	// let image = aniversery;
+	//export let data: PageData;
 </script>
 
 <div class="font-sans">
@@ -17,8 +16,8 @@
 					</h1>
 					<p class="mt-6 text-sm md:text-base lg:text-lg leading-8 text-muted-foreground">
 						The Chemmanur family traces its roots back to the early 1600s in the lush landscapes of
-						Kerala.<br /> Originally hailing from Perakam, the family has a storied history that
-						intertwines with the local culture and traditions of the region.<br /> The family name, 'Chemmanur,'
+						Kerala. Originally hailing from Perakam, the family has a storied history that
+						intertwines with the local culture and traditions of the region. The family name, 'Chemmanur,'
 						is believed to be derived from the Malayalam words for 'red soil,' reflecting the rich, fertile
 						lands of their ancestral home.
 					</p>
@@ -115,7 +114,7 @@
 
 	<section class="mb-8 hidden">
 		<div class="flex flex-col rounded-lg bg-white p-4 shadow-md md:flex-row md:items-center">
-			<img src={image} alt="Migration" class="rounded md:order-1 md:w-1/2" />
+			<!-- <img src={image} alt="Migration" class="rounded md:order-1 md:w-1/2" /> -->
 			<div class="md:w-1/2 md:pl-4">
 				<h2 class="text-xl font-semibold">Milestones and Achievements</h2>
 				<p class="text-secondary-color text-base">
@@ -127,23 +126,4 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- Repeat for other sections, alternating the order of the image -->
-
-	<section class="mb-8 hidden">
-		<div class="flex flex-col rounded-lg bg-white p-4 shadow-md md:flex-row md:items-center">
-			<img src={image} alt="Today and Beyond" class="rounded md:order-2 md:w-1/2" />
-			<div class="md:w-1/2 md:pl-4">
-				<h2 class="text-xl font-semibold">Today and Beyond</h2>
-				<p class="text-secondary-color text-base">
-					Today, the Chemmanur Kudumbayogam continues to thrive as a vibrant community, with members
-					spread across the globe yet remaining closely knit through shared history and ongoing
-					communication. As we celebrate the 25th anniversary of our Kudumbayogam, we look forward
-					to building on our past achievements and embracing the future with open arms, guided by
-					the principles and resilience inherited from our ancestors.
-				</p>
-				<Button class="mt-4">Learn More</Button>
-			</div>
-		</div>
-	</section>
-</div>
+	</div>
