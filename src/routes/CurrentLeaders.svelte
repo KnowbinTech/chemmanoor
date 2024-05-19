@@ -1,16 +1,15 @@
 <script lang="ts">
-    import type { PageData } from './$types';
-    import  Avatar  from "$lib/images/avatar.jpg"
-    import CpJose from "$lib/images/leaders/Adv-C-P-Jose.jpg"
-    
-    export let data: PageData;
+    import { onMount } from 'svelte';
+    import Avatar from "$lib/images/avatar.jpg"; // Adjust path as necessary
 
+    // Define the Leader type if not already defined globally
     interface Leader {
         name: string;
         image: string;
         roles: string[];
     }
 
+    // Placeholder for leaders data, replace with actual import or API call
     const leaders: Leader[] = [
     {
         name: 'Fr. John Chemmanoor (Late)',
@@ -119,7 +118,7 @@
     },
     {
         name: 'C. T. Jose (Late)',
-        image: '/images/leaders/c-t-jose.jpeg',
+        image: '/images/leaders/C-T-Jose.jpg',
         roles: ['Secretary 2014-2016']
     },
     {
@@ -129,7 +128,7 @@
     },
     {
         name: 'C. T. Babu',
-        image: '/images/leaders/babu-c-t.jpeg',
+        image: '/images/leaders/C-T-Babu.jpg',
         roles: ['Secretary 2016-2018']
     },
     {
@@ -139,7 +138,7 @@
     },
     {
         name: 'C. J. Jose',
-        image: '/images/leaders/c-j-jose.jpeg',
+        image: '/images/leaders/C-J-Jose.jpg',
         roles: ['Vice-President 2022-2024']
     },
     {
@@ -147,10 +146,16 @@
         image: '/images/leaders/John-2.jpg',
         roles: ['Secretary 2022-2024']
     }
-];
-
-function isCurrentLeader(role: string): boolean {
-    const currentYear = new Date().getFullYear();
+]; // Populate this array with actual leader data
+const rolePriority: { [key: string]: number } = {
+    'President': 1,
+    'Genl. Secretary': 2,
+    'Treasurer': 3,
+    'Secretary': 4,
+    'Vice-President': 5
+};
+    function isCurrentLeader(role: string): boolean {
+        const currentYear = new Date().getFullYear();
         const yearPattern = /(\d{4})/g;
         let match;
         let years = [];
@@ -160,116 +165,34 @@ function isCurrentLeader(role: string): boolean {
         return years.some(year => year >= currentYear);
     }
 
-    const currentLeaders = leaders.filter(leader => leader.roles.some(isCurrentLeader));
-    const previousLeaders = leaders.filter(leader => !leader.roles.some(isCurrentLeader));
+    let currentLeaders: Leader[] = [];
 
-    const patronNames = ['Fr. John Paul Chemmanoor', 'Major Cherunny Chemmanoor', 'Adv. C. P. Jose', 'Devassy Chemmanoor'];
-    const patrons = leaders.filter(leader => patronNames.includes(leader.name));
-
-
-    // Sort current leaders by the latest role they hold
-    currentLeaders.sort((a, b) => {
-        let lastRoleA = a.roles[a.roles.length - 1];
-        let lastRoleB = b.roles[b.roles.length - 1];
-        return lastRoleA.localeCompare(lastRoleB);
+    onMount(() => {
+        currentLeaders = leaders.filter(leader => leader.roles.some(isCurrentLeader));
+        // Sort current leaders by the highest priority role they hold
+        currentLeaders.sort((a, b) => {
+            let highestPriorityA = Math.min(...a.roles.map(role => {
+                const roleName = role.split(' ')[0]; // Assuming role names are the first word
+                return rolePriority[roleName] || Number.MAX_VALUE;
+            }));
+            let highestPriorityB = Math.min(...b.roles.map(role => {
+                const roleName = role.split(' ')[0];
+                return rolePriority[roleName] || Number.MAX_VALUE;
+            }));
+            return highestPriorityA - highestPriorityB;
+        });
     });
 
-    // Sort previous leaders by the number of roles they've held
-    previousLeaders.sort((a, b) => {
-    // Extract the earliest year from the roles
-    const getEarliestYear = (roles: string[]) => {
-        const years = roles.map(role => {
-            const match = role.match(/(\d{4})/);
-            return match ? parseInt(match[1], 10) : Infinity;
-        });
-        return Math.min(...years);
-    };
-
-    const rolePriority: { [key: string]: number } = {
-    'President': 1,
-    'Genl. Secretary': 2,
-    'Treasurer': 3,
-    'Secretary': 4,
-    'Vice-President': 5
-};
-
-    // Function to get the highest priority role from a leader's roles
-    const getHighestPriorityRole = (roles: string[]) => {
-        let highestPriority = Infinity;
-        roles.forEach(role => {
-            Object.keys(rolePriority).forEach(key => {
-                if (role.includes(key) && rolePriority[key] < highestPriority) {
-                    highestPriority = rolePriority[key];
-                }
-            });
-        });
-        return highestPriority;
-    };
-
-    const yearA = getEarliestYear(a.roles);
-    const yearB = getEarliestYear(b.roles);
-
-    if (yearA !== yearB) {
-        return yearA - yearB; // Ascending by earliest year
-    } else {
-        // If years are the same, sort by role priority
-        return getHighestPriorityRole(a.roles) - getHighestPriorityRole(b.roles);
-    }
-});
-function sortRolesByLatest(roles: string[]): string[] {
+    function sortRolesByLatest(roles: string[]): string[] {
         return roles.sort((a, b) => {
             const yearA = a.match(/(\d{4})/);
             const yearB = b.match(/(\d{4})/);
             return yearB ? parseInt(yearB[1], 10) : 0 - (yearA ? parseInt(yearA[1], 10) : 0);
         });
     }
-    
 </script>
 
 <div class="container mx-auto px-4">
-    {#if patrons.length > 0}
-    <h2 class="text-2xl font-bold my-6">Patrons</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mb-10">
-        {#each patrons as leader}
-            <div class="card bg-background shadow-lg rounded-lg w-full overflow-hidden">
-                <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
-                    <img src={leader.image || Avatar} alt={leader.name} class="w-full h-full object-cover">
-                </div>
-                <div class="p-4 text-center">
-                    <h3 class="text-lg text-primary font-bold">{leader.name}</h3>
-                    <ul class="mt-2">
-                        {#each sortRolesByLatest(leader.roles) as role}
-                            <li class="text-sm text-primary-muted">{role}</li>
-                        {/each}
-                    </ul>
-                </div>
-            </div>
-        {/each}
-    </div>
-    {/if}
-
-
-    {#if previousLeaders.length > 0}
-        <h2 class="text-2xl font-bold my-6">Previous Leaders</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
-            {#each previousLeaders as leader}
-                <div class="card bg-background shadow-lg rounded-lg w-full overflow-hidden">
-                    <div class="rounded-full w-32 h-32 mx-auto overflow-hidden mt-4">
-                        <img src={leader.image || Avatar} alt={leader.name} class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4 text-center">
-                        <h3 class="text-lg text-primary font-bold">{leader.name}</h3>
-                        <ul class="mt-2">
-                            {#each sortRolesByLatest(leader.roles) as role}
-                                <li class="text-sm text-primary-muted">{role}</li>
-                            {/each}
-                        </ul>
-                    </div>
-                </div>
-            {/each}
-        </div>
-    {/if}
-    
     {#if currentLeaders.length > 0}
     <h2 class="text-2xl font-bold my-6">Current Leaders</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mb-10">
@@ -289,5 +212,5 @@ function sortRolesByLatest(roles: string[]): string[] {
             </div>
         {/each}
     </div>
-{/if}
+    {/if}
 </div>

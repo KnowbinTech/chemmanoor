@@ -26,8 +26,7 @@
                   />
                </a>
                <p class="text-base text-body-color dark:text-dark-6 mb-7">
-                  Sed ut perspiciatis undmnis is iste natus error sit amet
-                  voluptatem totam rem aperiam.
+                  Home where all Chemmanur family members find a sense of belonging and connection
                </p>
                <p
                   class="flex items-center text-sm font-medium text-dark dark:text-white"
@@ -61,7 +60,7 @@
                         </defs>
                      </svg>
                   </span>
-                  <span>+012 (345) 678 99</span>
+                  <span>+91 8848900042</span>
                </p>
             </div>
          </div>
@@ -101,7 +100,7 @@
          <div class="w-full px-4 sm:w-1/2 md:w-2/12">
             <div class="w-full mb-10">
                <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
-                  Company
+                  Community
                </h4>
                <ul class="space-y-3">
                   <li>
@@ -109,7 +108,7 @@
                         href="/"
                         class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                         >
-                     About TailGrids
+                     About 
                      </a>
                   </li>
                   <li>

@@ -1,9 +1,9 @@
 <script>
   import * as Card from "$lib/components/ui/card";
   import { Button } from "$lib/components/ui/button";
-  import aniversery from "$lib/images/aniversery.png";
+  import aniversary from "$lib/images/aniversary.png";
 
-  let image = aniversery;
+  let image = aniversary;
 </script>
 
 <div class="container mx-auto flex flex-col md:flex-row items-center py-12 md:py-24">

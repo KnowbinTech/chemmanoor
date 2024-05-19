@@ -1,11 +1,11 @@
 <script>
   import { Button } from "$lib/components/ui/button";
-  import aboutImage from "$lib/images/logo.png";
+  import aboutImage from "$lib/images/Logoblack.png";
 </script>
 
 <div class="container mx-auto flex flex-col md:flex-row items-center py-12 md:py-24 ">
-  <div class="flex-1 dark:bg-gray-300 dark:rounded-lg dark:shadow-lg" >
-    <img src={aboutImage} alt="About Us" class="w-full h-auto fill-black dark:fill-white">
+  <div class="flex-1 " >
+    <img src={aboutImage} alt="About Us" class="w-full h-auto  dark:invert">
   </div>
   <div class="flex-1 flex flex-col justify-center items-start p-4">
     <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4 text-primary">
