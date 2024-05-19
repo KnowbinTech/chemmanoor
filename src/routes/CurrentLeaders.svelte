@@ -138,7 +138,7 @@
     },
     {
         name: 'C. J. Jose',
-        image: '/images/leaders/C-J-Jose.jpg',
+        image: '/images/leaders/c-j-jose.jpeg',
         roles: ['Vice-President 2022-2024']
     },
     {
